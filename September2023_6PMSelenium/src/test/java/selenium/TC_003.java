@@ -1,7 +1,5 @@
 package selenium;
 
-import org.openqa.selenium.By;
-
 public class TC_003 extends BaseTest
 {
 
