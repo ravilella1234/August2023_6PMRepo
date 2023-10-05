@@ -1,7 +1,7 @@
 package browseroptions;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -18,6 +18,7 @@ public class FirefoxOptionsDemo
 		option.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 		//option.addArguments("--headless");
 		//option.addArguments("--private");
+		option.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
 		//firefox.exe -p
 		ProfilesIni allprofile = new ProfilesIni();
@@ -40,6 +41,8 @@ public class FirefoxOptionsDemo
 
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver(option);
+		
+		//WebDriver driver = WebDriverManager.firefoxdriver().capabilities(option).create();
 		
 		//driver.switchTo().newWindow(WindowType.TAB);
 		//driver.switchTo().newWindow(WindowType.WINDOW);
