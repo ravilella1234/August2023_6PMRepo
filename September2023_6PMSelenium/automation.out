@@ -4,3 +4,15 @@ Navigating to url : https://www.amazon.in
 Selecting option Books By using loactor :searchDropdownBox
 Entered text Harry Potter By using locator : twotabsearchtextbox
 Clicked on Element By using locator : //*[@id="nav-search-submit-button"]
+Init the properties files....
+Launching the browser : chrome
+Navigating to url : https://www.amazon.in
+Selecting option Books By using loactor :searchDropdownBox
+Entered text Harry Potter By using locator : twotabsearchtextbox
+Clicked on Element By using locator : //*[@id="nav-search-submit-button"]
+Init the properties files....
+Launching the browser : chrome
+Navigating to url : https://www.amazon.in
+Selecting option Books By using loactor :searchDropdownBox
+Entered text Harry Potter By using locator : twotabsearchtextbox
+Clicked on Element By using locator : //*[@id="nav-search-submit-button"]
