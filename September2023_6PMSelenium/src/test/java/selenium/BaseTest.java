@@ -36,7 +36,13 @@ public class BaseTest
 	public static Properties orprop;
 	public static ExtentReports report;
 	public static ExtentTest test;
+	public static String filePath;
 	
+	static
+	{
+		Date d = new Date();
+		filePath = d.toString().replace(':', '_').replace(' ', '_');
+	}
 	
 	public static void init() throws Exception
 	{
