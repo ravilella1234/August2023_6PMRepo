@@ -1,337 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
-    <line>
-      <![CDATA[Test Started Running :amazon]]>
-    </line>
-    <line>
-      <![CDATA[Retrying test amazon with status FAILURE for the 1 time(s).]]>
-    </line>
-    <line>
-      <![CDATA[Test is skipped :amazon]]>
-    </line>
-    <line>
-      <![CDATA[Test Started Running :amazon]]>
-    </line>
-    <line>
-      <![CDATA[Retrying test amazon with status FAILURE for the 2 time(s).]]>
-    </line>
-    <line>
-      <![CDATA[Test is skipped :amazon]]>
-    </line>
-    <line>
-      <![CDATA[Test Started Running :amazon]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\April2022WD\September2023_6PMSelenium//failure//Mon_Oct_30_18_50_56_IST_2023.png'> <img src='D:\April2022WD\September2023_6PMSelenium//failure//Mon_Oct_30_18_50_56_IST_2023.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Failed:amazon]]>
-    </line>
-    <line>
-      <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="140678" started-at="2023-10-30T13:20:57Z" finished-at="2023-10-30T13:23:17Z">
+  <suite name="Default suite" duration-ms="196" started-at="2023-11-01T13:23:43Z" finished-at="2023-11-01T13:23:43Z">
     <groups>
-      <group name="regression">
-        <method signature="TNG_002.amazon()[pri:0, instance:testng.TNG_002@3cef309d]" name="amazon" class="testng.TNG_002"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TNG_002.amazon()[pri:0, instance:testng.TNG_002@3cef309d]" name="amazon" class="testng.TNG_002"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="140678" started-at="2023-10-30T13:20:57Z" finished-at="2023-10-30T13:23:17Z">
-      <class name="testng.TNG_002">
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:testng.TNG_002@3cef309d]" name="start" is-config="true" duration-ms="11258" started-at="2023-10-30T13:20:57Z" finished-at="2023-10-30T13:21:08Z">
+    <test name="Default test" duration-ms="196" started-at="2023-11-01T13:23:43Z" finished-at="2023-11-01T13:23:43Z">
+      <class name="testng.TestUser">
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="createUser" duration-ms="20" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email1@domain.com]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="SKIP" signature="amazon()[pri:0, instance:testng.TNG_002@3cef309d]" name="amazon" duration-ms="31596" started-at="2023-10-30T13:21:08Z" finished-at="2023-10-30T13:21:40Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at selenium.BaseTest.isElementPresent(BaseTest.java:151)
-at selenium.BaseTest.getElement(BaseTest.java:121)
-at selenium.BaseTest.typeText(BaseTest.java:106)
-at testng.TNG_002.amazon(TNG_002.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbo"}
-  (Session info: chrome=118.0.5993.118)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b430e7deb5d902b59e033a3bc4ab231, findElement {using=id, value=twotabsearchtextbo}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53380/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b430e7deb5d902b59e033a3bc4ab231
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazon]]>
-            </line>
-            <line>
-              <![CDATA[Retrying test amazon with status FAILURE for the 1 time(s).]]>
-            </line>
-            <line>
-              <![CDATA[Test is skipped :amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="end()[pri:0, instance:testng.TNG_002@3cef309d]" name="end" is-config="true" duration-ms="3406" started-at="2023-10-30T13:21:40Z" finished-at="2023-10-30T13:21:43Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="createUser" duration-ms="2" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[superAdmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email2@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:testng.TNG_002@3cef309d]" name="start" is-config="true" duration-ms="3332" started-at="2023-10-30T13:21:43Z" finished-at="2023-10-30T13:21:46Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="createUser" duration-ms="10" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email3@domain.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="deleteUser" duration-ms="3" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="SKIP" signature="amazon()[pri:0, instance:testng.TNG_002@3cef309d]" name="amazon" duration-ms="42875" started-at="2023-10-30T13:21:46Z" finished-at="2023-10-30T13:22:29Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at selenium.BaseTest.isElementPresent(BaseTest.java:151)
-at selenium.BaseTest.getElement(BaseTest.java:121)
-at selenium.BaseTest.typeText(BaseTest.java:106)
-at testng.TNG_002.amazon(TNG_002.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbo"}
-  (Session info: chrome=118.0.5993.118)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3914cbb2b3d3a7ae02cf9e538489e162, findElement {using=id, value=twotabsearchtextbo}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53479/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3914cbb2b3d3a7ae02cf9e538489e162
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazon]]>
-            </line>
-            <line>
-              <![CDATA[Retrying test amazon with status FAILURE for the 2 time(s).]]>
-            </line>
-            <line>
-              <![CDATA[Test is skipped :amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="end()[pri:0, instance:testng.TNG_002@3cef309d]" name="end" is-config="true" duration-ms="1214" started-at="2023-10-30T13:22:29Z" finished-at="2023-10-30T13:22:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:testng.TNG_002@3cef309d]" name="start" is-config="true" duration-ms="3519" started-at="2023-10-30T13:22:30Z" finished-at="2023-10-30T13:22:34Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email1@domain.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="FAIL" signature="amazon()[pri:0, instance:testng.TNG_002@3cef309d]" name="amazon" duration-ms="41356" started-at="2023-10-30T13:22:34Z" finished-at="2023-10-30T13:23:15Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at selenium.BaseTest.isElementPresent(BaseTest.java:151)
-at selenium.BaseTest.getElement(BaseTest.java:121)
-at selenium.BaseTest.typeText(BaseTest.java:106)
-at testng.TNG_002.amazon(TNG_002.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbo"}
-  (Session info: chrome=118.0.5993.118)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [494d7c26ea58f07253ca58233e3df9d2, findElement {using=id, value=twotabsearchtextbo}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53585/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 494d7c26ea58f07253ca58233e3df9d2
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazon]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\April2022WD\September2023_6PMSelenium//failure//Mon_Oct_30_18_50_56_IST_2023.png'> <img src='D:\April2022WD\September2023_6PMSelenium//failure//Mon_Oct_30_18_50_56_IST_2023.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Failed:amazon]]>
-            </line>
-            <line>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: twotabsearchtextbo (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="end()[pri:0, instance:testng.TNG_002@3cef309d]" name="end" is-config="true" duration-ms="1091" started-at="2023-10-30T13:23:16Z" finished-at="2023-10-30T13:23:17Z">
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="deleteUser" duration-ms="5" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[superAdmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email2@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- testng.TNG_002 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String)[pri:0, instance:testng.TestUser@4e1d422d]" name="deleteUser" duration-ms="10" started-at="2023-11-01T13:23:43Z" data-provider="getData" finished-at="2023-11-01T13:23:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email3@domain.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- testng.TestUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
